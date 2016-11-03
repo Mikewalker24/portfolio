@@ -26,7 +26,11 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'customer-service' => 'Customer Service',
+		'help' => 'Help',
+		'follow us' => 'Follow Us',
+		'footer bar' => 'Footer Bar',
 	) );
 
 	/*

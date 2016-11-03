@@ -1,0 +1,70 @@
+section.hero {
+	width: 100%;
+	.flickity {
+		width: 100%;
+	}
+
+	.flickity-viewport {
+		width: 100%;
+	}
+
+	.flickity-cell {
+		width: 100%;
+		background-image: url(http://unsplash.it/800/600);
+		background-size: cover;
+		h2, p {
+			text-align: center;
+			color: #fff;
+			font-family: 'Open Sans', 'Helvetica', sans-serif;
+		}
+		h2 {
+			text-transform: uppercase;
+			font-size: 3rem;
+			letter-spacing: 3px;
+			margin-top: 150px;
+			margin-bottom: 0;
+		}
+		p {
+			margin-bottom: 150px;
+		}
+
+	}
+
+	.flickity-cell1 {
+
+	}
+	
+	/* position dots in carousel */
+	.flickity-page-dots {
+	  bottom: 0px;
+	  padding-bottom: 10px;
+	}
+
+	/* white circles */
+	.flickity-page-dots .dot {
+	  width: 12px;
+	  height: 12px;
+	  opacity: 1;
+	  background: transparent;
+	  border: 2px solid white;
+	}
+	/* fill-in selected dot */
+	.flickity-page-dots .dot.is-selected {
+	  background: white;
+	}
+
+	/* no circle */
+	.flickity-prev-next-button {
+	  background: transparent;
+	  height: 50px;
+	  width: 50px;
+	}
+
+	/* arrow color */
+	.flickity-prev-next-button .arrow {
+	  fill: white;
+	}
+	.flickity-prev-next-button.no-svg {
+	  color: white;
+	}
+}

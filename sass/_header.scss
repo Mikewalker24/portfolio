@@ -1,0 +1,53 @@
+header {
+	.header-bar {
+		background: #EBEBEB;
+		padding: 0.5% 0;
+		p {
+			margin: 0;
+			display: inline;
+			text-transform: uppercase;
+			font-size: 0.5rem;
+		}
+		.header-container-left {
+			float: left;
+		}
+		.header-container-right {
+			float: right;
+			white-space: nowrap;
+			p {
+				margin-right: 8%;
+			}
+		}
+	}
+
+	.container {
+		h1 {
+			text-align: center;
+			margin: 3% 0;
+			a {
+				color: #333;
+			}
+		}
+	}
+
+	ul.menu {
+		margin: 0;
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 60%;
+		li {
+			display: inline;
+			flex-basis: 8%;
+			a {
+				color: #444;
+				font-family: 'Oswald', sans-serif;
+				font-size: 0.8rem;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+		}
+	}
+
+}
