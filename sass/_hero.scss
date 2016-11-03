@@ -10,22 +10,43 @@ section.hero {
 
 	.flickity-cell {
 		width: 100%;
-		background-image: url(http://unsplash.it/800/600);
-		background-size: cover;
 		h2, p {
 			text-align: center;
 			color: #fff;
-			font-family: 'Open Sans', 'Helvetica', sans-serif;
+			font-family: $open-sans;
+			text-shadow: 1px 1px #444;
 		}
 		h2 {
 			text-transform: uppercase;
 			font-size: 3rem;
 			letter-spacing: 3px;
-			margin-top: 150px;
+			margin-top: 200px;
 			margin-bottom: 0;
 		}
 		p {
-			margin-bottom: 150px;
+			
+		}
+		.button-container {
+			display: inline-block;
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 250px;
+			text-align: center;
+			font-size: 0;
+		}
+		a {
+			color: #fff;
+			border: 1px solid $beige;
+			background-color: $beige;
+			padding: 10px 30px;
+			border-radius: 40px;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: transparent;
+				border-color: #fff;
+			}
 		}
 
 	}
@@ -37,7 +58,7 @@ section.hero {
 	/* position dots in carousel */
 	.flickity-page-dots {
 	  bottom: 0px;
-	  padding-bottom: 10px;
+	  padding-bottom: 20px;
 	}
 
 	/* white circles */

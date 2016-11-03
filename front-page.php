@@ -9,20 +9,19 @@
 
         <?php the_content(); ?>
         <section class="hero">
+	        
 	        <div class="flickity" data-flickity='{ "wrapAround": true }'>
-	        	<div class="flickity-cell flickity-cell1">
-	        		<h2>Plant For Interior</h2>
-	        		<p>Bring freshness for your architecture</p>
-	        	</div>
-	        	<div class="flickity-cell flickity-cell2">
-	        		<h2>Plant For Interior</h2>
-	        		<p>Bring freshness for your architecture</p>
-	        	</div>
-	        	<div class="flickity-cell flickity-cell3">
-	        		<h2>Plant For Interior</h2>
-	        		<p>Bring freshness for your architecture</p>
-	        	</div>
+	        	<?php while(has_sub_field('hero_slider')): ?>
+		        	<div class="flickity-cell" style="background-image: url(<?php the_sub_field('hero_image'); ?>);background-size: cover;">
+		        		<h2><?php the_sub_field('hero_title'); ?></h2>
+		        		<p><?php the_sub_field('hero_subtitle'); ?></p>
+		        		<div class="button-container"><a href="#">Shop Now</a></div>
+		        	</div>
+		        <?php endwhile; ?>
 	        </div>
+
+			
+
         </section>
 
       <?php endwhile; // end the loop?>
