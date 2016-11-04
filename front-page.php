@@ -20,59 +20,108 @@
 		        <?php endwhile; ?>
 	        </div>
 
-        <section class="featured-category">
+         <section class="featured-category">
 			<div class="container">
 				<div class="left">
 					<figure>
-						<img src="https://unsplash.it/700/800" alt="">
+						<img src="<?php the_field('left_image') ?>" alt="">
 						<figcaption>
-							<h2>Title</h2>
-							<p>Whatever whatever</p>
+							<h2><?php the_field('left_title') ?></h2>
+							<p><?php the_field('left_description') ?></p>
+							<div class="button-container"><a href="#">Shop Now</a></div>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="right">
 					<div class="top">
 						<div class="top-left">
-						<figure>
-							<img src="https://unsplash.it/700/800" alt="">
-							<figcaption>
-								<h2>Title</h2>
-								<p>Whatever whatever</p>
-							</figcaption>
+							<img src="<?php the_field('top_left_image') ?>" alt="">
 						</figure>
 							
 						</div>
 						<div class="top-right">
-							<figure>
-							<img src="https://unsplash.it/700/800" alt="">
-							<figcaption>
-								<h2>Title</h2>
-								<p>Whatever whatever</p>
-							</figcaption>
+							<img src="<?php the_field('top_right_image') ?>" alt="">
 						</figure>
 						</div>
 					</div>
 					<div class="bottom">
 						<figure>
-							<img src="https://unsplash.it/1400/800" alt="">
+							<img src="<?php the_field('bottom_image') ?>" alt="">
 							<figcaption>
-								<h2>Title</h2>
-								<p>Whatever whatever</p>
+								<h2><?php the_field('bottom_hover_text') ?></h2>
 							</figcaption>
 						</figure>
 					</div>
 				</div>
 			</div>
+		</section>
+
         <section class="new-product">
-	        <div class="flickity" data-flickity='{ "wrapAround": true }'>
-	        	<?php while(has_sub_field('hero_slider')): ?>
-		        	<div class="flickity-cell" style="background-image: url(<?php the_sub_field('hero_image'); ?>);background-size: cover;">
-		        		<h2><?php the_sub_field('hero_title'); ?></h2>
-		        		<p><?php the_sub_field('hero_subtitle'); ?></p>
-		        		<div class="button-container"><a href="#">Shop Now</a></div>
+	        <div class="container">
+	        	<h2>New Product</h2>
+		        <div class="flickity" data-flickity='{ "wrapAround": true, "cellAlign": "center" }'>
+		        	<div class="flickity-cell clearfix">
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
 		        	</div>
-		        <?php endwhile; ?>
+
+		        	<div class="flickity-cell">
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        		<figure>
+		        			<img src="http://placekitten.com/300/300" alt="">
+		        			<figcaption>
+		        				<h4>Small Terrariums Plant for Desk</h4>
+		        				<h5>$69</h5>
+		        			</figcaption>
+		        		</figure>
+		        	</div>
+		        </div>
 	        </div>
         </section>
 

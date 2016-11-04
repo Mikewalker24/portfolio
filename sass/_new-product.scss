@@ -1,0 +1,18 @@
+section.new-product {
+	h2 {
+		color: #000;
+		text-align: center;
+	}
+	
+	.flickity-cell {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	figure {
+		flex-basis: 22%;
+	}
+	figure::after {
+		// content: none;
+	}
+}
