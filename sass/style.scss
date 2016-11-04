@@ -43,10 +43,19 @@ body {
 }
 
 .content {
+	width: 70%;
+	float: left;
 }
 
 .full {
 	width: 100%;
+}
+
+.blog-post {
+	padding: 2% 0;
+	img {
+		width: 100%;
+	}
 }
 
 
