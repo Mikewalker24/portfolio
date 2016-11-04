@@ -36,7 +36,7 @@ section.hero {
 		}
 		a {
 			color: #fff;
-			border: 1px solid $beige;
+			border: 2px solid $beige;
 			background-color: $beige;
 			padding: 10px 30px;
 			border-radius: 40px;
@@ -77,8 +77,8 @@ section.hero {
 	/* no circle */
 	.flickity-prev-next-button {
 	  background: transparent;
-	  height: 50px;
-	  width: 50px;
+	  height: 70px;
+	  width: 70px;
 	}
 
 	/* arrow color */
