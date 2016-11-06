@@ -18,6 +18,7 @@
 		        	</div>
 		        <?php endwhile; ?>
 	        </div>
+	    </section>
 
          <section class="featured-category">
 			<div class="container">
@@ -30,20 +31,20 @@
 							<div class="button-container"><a href="#">Shop Now</a></div>
 						</figcaption>
 					</figure>
-				</div>
-				<div class="right">
-					<div class="top">
+				</div><!-- 
+				 --><div class="right"><!-- 
+					 --><div class="top">
 						<div class="top-left">
 							<img src="<?php the_field('top_left_image') ?>" alt="">
 						</figure>
 							
-						</div>
-						<div class="top-right">
+						</div><!-- 
+						 --><div class="top-right">
 							<img src="<?php the_field('top_right_image') ?>" alt="">
 						</figure>
 						</div>
-					</div>
-					<div class="bottom">
+					</div><!-- 
+					 --><div class="bottom">
 						<figure>
 							<img src="<?php the_field('bottom_image') ?>" alt="">
 							<figcaption>

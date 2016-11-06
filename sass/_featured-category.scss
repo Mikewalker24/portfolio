@@ -1,12 +1,11 @@
 section.featured-category {
-	padding: 5% 0;
 	color: white;
-	
 	.left {
 		display: inline-block;
 		font-size: 0;
-		width: 48%;
+		width: 49.33%;
 		margin-right: 1%;
+		vertical-align: top;
 		figure {
 			position: relative;
 			figcaption {
@@ -55,8 +54,9 @@ section.featured-category {
 	.right {
 		display: inline-block;
 		font-size: 0;
-		width: 48%;
+		width: 48.66%;
 		margin-left: 1%;
+		vertical-align: top;
 		
 		.top {
 			width: 100%;

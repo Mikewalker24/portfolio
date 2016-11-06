@@ -1,0 +1,39 @@
+.blog-index {
+	.blog-post {
+		img {
+			width: 100%;
+		}
+		
+		p.blog-date {
+			font-family: $open-sans;
+			font-size: 0.8rem;
+			color: $beige;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			a {
+				transition: all 0.3s ease;
+				&:hover {
+					color: $beige;
+				}
+			}	
+		}	
+	
+		h3 {
+			a {
+				font-family: $oswald;
+				text-transform: uppercase;
+				color: $beige;
+				font-size: 0.8rem;
+				letter-spacing: 1.5px;
+				transition: all 0.3s ease;
+				&:hover {
+					color: #444;
+				}
+			}
+		}
+	}
+	
+}
+

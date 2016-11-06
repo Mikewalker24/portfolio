@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
@@ -21,13 +20,13 @@
     <div class="container">
      
       <div class="header-container-left">
-        <p><?php the_field('offer'); ?></p>  
+        <a href="#"><?php the_field('offer'); ?></a>  
       </div>
     
       <div class="header-container-right">
-        <p><?php the_field('language'); ?></p>
-        <p><?php the_field('currency'); ?></p>
-        <p><?php the_field('account'); ?></p>
+        <a href="#"><?php the_field('language'); ?></a>
+        <a href="#"><?php the_field('currency'); ?></a>
+        <a href="#"><?php the_field('account'); ?></a>
       </div>
     
     </div> 
