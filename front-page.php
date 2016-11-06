@@ -22,11 +22,12 @@
 
          <section class="featured-category">
 			<div class="container">
+				<h2>Featured Products</h2>
 				<div class="left">
 					<figure>
 						<img src="<?php the_field('left_image') ?>" alt="">
 						<figcaption>
-							<h2><?php the_field('left_title') ?></h2>
+							<h3><?php the_field('left_title') ?></h3>
 							<p><?php the_field('left_description') ?></p>
 							<div class="button-container"><a href="#">Shop Now</a></div>
 						</figcaption>
@@ -48,13 +49,27 @@
 						<figure>
 							<img src="<?php the_field('bottom_image') ?>" alt="">
 							<figcaption>
-								<h2><?php the_field('bottom_hover_text') ?></h2>
+								<h3><?php the_field('bottom_hover_text') ?></h3>
 							</figcaption>
 						</figure>
 					</div>
 				</div>
 			</div>
 		</section>
+
+        <section id="about">
+        	<div class="about-wrapper">
+	        	<div class="about-column">
+	        		<img src="<?php the_field('about_image'); ?>" alt="">
+	        	</div><!-- 
+	        	 --><div class="about-column">
+	        		<div class="about-column-wrapper">
+		        		<h2><?php the_field('about_heading'); ?></h2>
+		        		<?php the_field('about_copy'); ?>
+	        		</div>
+	        	</div>
+        	</div>
+        </section>
 
         <section class="new-product">
 	        <div class="container">
@@ -122,6 +137,28 @@
 		        		</figure>
 		        	</div>
 		        </div>
+	        </div>
+        </section>
+
+        <section class="blog-home">
+	        <div class="container">
+		        
+
+		        <?php
+		            $new = new WP_Query('posts_per_page=3');
+		            while ($new->have_posts()) : $new->the_post();
+		        ?>
+
+		        <article>
+		            <?php the_post_thumbnail('full'); ?>
+		            <h2><?php the_title(); ?></h2>
+		            <?php the_excerpt(); ?>
+		            <div class="more-link"><a href="<?php the_permalink(); ?>">Read More</a></div>
+		        </article>
+
+		        <?php endwhile; ?>
+
+		        <?php wp_reset_query();?>
 	        </div>
         </section>
 

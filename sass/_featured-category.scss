@@ -1,5 +1,13 @@
 section.featured-category {
 	color: white;
+	background-color: #EBEBEB;
+	h2 {
+		font-family: $oswald;
+		text-align: center;
+		color: #444;
+		padding-top: 3%;
+	}
+
 	.left {
 		display: inline-block;
 		font-size: 0;
@@ -16,7 +24,8 @@ section.featured-category {
 				right:0;
 				z-index: 10;
 				padding-left: 10px;
-				h2 {
+				h3 {
+					font-family: $open-sans;
 					font-size: 2rem;
 					margin: 1rem 0;
 				}
@@ -90,7 +99,8 @@ section.featured-category {
 					justify-content: center;
 					align-items: center;
 
-					h2 {
+					h3 {
+						font-family: $open-sans;
 						font-size: 2rem;
 						text-align: center;
 

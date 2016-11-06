@@ -1,0 +1,13 @@
+.blog-home {
+	.container {
+		display: flex;
+		justify-content: space-between;
+		article {
+			flex-basis: 30%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
