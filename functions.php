@@ -26,11 +26,7 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation',
-		'customer-service' => 'Customer Service',
-		'help' => 'Help',
-		'follow us' => 'Follow Us',
-		'footer bar' => 'Footer Bar',
+		'primary' => 'Primary Navigation'
 	) );
 
 	/*
@@ -55,8 +51,6 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
-
-	wp_enqueue_style ('flickity', 'https://unpkg.com/flickity@2.0/dist/flickity.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -91,20 +85,9 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
-
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
-
-
-  /** * Enqueue Google Fonts
-  */
-  function wpb_add_google_fonts() {
-
-  wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald', false );
-  }
-
-  add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 
 /* Custom Title Tags */
@@ -148,35 +131,35 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
  * Sets the post excerpt length to 40 characters.
  */
 function hackeryou_excerpt_length( $length ) {
-	return 25;
+	return 40;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
 /*
  * Returns a "Continue Reading" link for excerpts
  */
-// function hackeryou_continue_reading_link() {
-// 	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
-// }
+function hackeryou_continue_reading_link() {
+	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+}
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and hackeryou_continue_reading_link().
  */
 function hackeryou_auto_excerpt_more( $more ) {
-	return '&hellip;';
+	return ' &hellip;' . hackeryou_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'hackeryou_auto_excerpt_more' );
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.
  */
-// function hackeryou_custom_excerpt_more( $output ) {
-// 	if ( has_excerpt() && ! is_attachment() ) {
-// 		$output .= hackeryou_continue_reading_link();
-// 	}
-// 	return $output;
-// }
-// add_filter( 'get_the_excerpt', 'hackeryou_custom_excerpt_more' );
+function hackeryou_custom_excerpt_more( $output ) {
+	if ( has_excerpt() && ! is_attachment() ) {
+		$output .= hackeryou_continue_reading_link();
+	}
+	return $output;
+}
+add_filter( 'get_the_excerpt', 'hackeryou_custom_excerpt_more' );
 
 
 /*

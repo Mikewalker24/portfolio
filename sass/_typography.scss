@@ -1,8 +1,8 @@
 a {
-	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	// color: #BA209B;
 	text-decoration: none;
-	color: #444;
 	&:hover {
+		// color: #D424B1;
 	}
 }
 
@@ -10,14 +10,12 @@ a {
 
 p {
 	line-height: 1.5;
-	font-family: $open-sans;
 }
 
 // headings
 
-h2 {
-	font-family: $oswald;
-	letter-spacing: 2px;
+h1, h2, {
+	text-align: center;
 }
 
 /*blockquotes*/

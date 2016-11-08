@@ -1,32 +1,11 @@
 .sidebar {
-	width: 25%;
-	float: left;
-	padding-left: 2%;
+	// width: 30%;
+	// float: left;
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			list-style: none;
 		}
-	}
-
-	img.attachment-full {
-		height: auto;
-		width: 100%;
-	}
-	
-	h3 {
-		margin: 10% 0;
-		// &:first-of-type {
-		// 	margin-top: 2%;
-		// }
-	}
-
-
-	ul.menu {
-		width: 80%;
-		margin: 0 auto;
-		display: flex;
-		justify-content: space-between;
 	}
 }

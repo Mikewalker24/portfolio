@@ -10,17 +10,10 @@
 @import 'normalize';
 @import 'variables';
 @import 'typography';
-// @import 'navigation';
+@import 'navigation';
+@import 'home';
 @import 'sidebar';
 @import 'comments';
-@import 'header';
-@import 'hero';
-@import 'featured-category';
-@import 'new-product';
-@import 'blog-index';
-@import 'contact';
-@import 'about';
-@import 'blog-home';
 @import 'footer';
 /*
 ====================================
@@ -33,44 +26,25 @@ img {
 }
 
 body {
-	color: #333;
+	background-color: $grey;
 }
 
 section {
-	margin: 4% 0;
+	padding: 3% 0;
 }
 
 .container {
-	width: 80%;
 	max-width: 1200px;
 	margin: 0 auto;
-}
-
-.flex-container {
-	display: flex;
+	width: 90%;
 }
 
 .content {
-	width: 75%;
-	float: left;
+
 }
 
 .full {
 	width: 100%;
-}
-
-.blog-post {
-	padding: 2% 0;
-	img {
-		width: 100%;
-	}
-}
-
-a {
-	transition: all 0.3s ease;
-	&:hover {
-		color: $beige;
-	}
 }
 
 

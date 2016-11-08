@@ -1,0 +1,59 @@
+section.splash {
+	background-color: $teal;
+	color: white;
+	.splash-container {
+		padding: 20% 0;
+		margin: 0 auto;
+	}
+
+	h1, h3 {
+		margin: 3% 0;
+		text-align: center;
+	}
+
+	hr {
+		width: 50%;
+	}
+}
+
+section.recent {
+	h2 {
+
+	}
+
+	.recent-container {
+		border: 1px solid grey;
+		font-size: 0;
+		padding: 5%;
+	}
+
+	.box {
+		display: inline-block;
+		height: 200px;
+		width: 200px;
+		background-color: grey;
+		margin-right: 5%;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+section.hi {
+	.hi-left, .hi-right {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 0;
+		width: 50%;
+	}
+	.hi-left {
+		h3 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+
+
+}
