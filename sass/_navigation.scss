@@ -1,3 +1,9 @@
+.nav {
+	display: inline-block;
+	padding: 2%;
+	margin-left: 2%;
+}
+
 ul.menu {
 	margin: 0;
 	padding: 0;
@@ -7,8 +13,13 @@ ul.menu {
 		a {
 			color: #333;
 			padding: 10px;
-			background: #333;
 			color: white;
+			transition: all 0.2s ease;
+			font-family: 'Cormorant Garamond';
+			font-style: italic; 
+			&:hover {
+				opacity: 0.3;
+			}
 		}
 	}
 }

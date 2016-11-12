@@ -1,0 +1,287 @@
+@media (max-width:1050px) {
+	section.hi {
+		.hi-left {
+			top: -35px;
+			min-height: 425px;
+		}
+	}
+}
+
+@media (max-width: 980px) {
+	section.what {
+
+		h2 {
+			margin: 0 10% 0 0;
+			&::before {
+				width: 40%;
+				left: -20px;
+			}
+
+		}
+
+		.what-container {
+			width: 40%;
+			margin: 8% auto;
+			padding: 5%;
+			position: relative;
+			&:nth-of-type(odd) h4{
+				left: 110%;
+			}
+		}
+
+		h4 {
+			font-family: 'Gotham Book';
+			font-size: 6rem;
+			position: absolute;
+			top: 7%;
+			left: -50%;
+		}
+	}
+}
+
+
+@media (max-width:930px) {
+	section.hi {
+		.hi-left {
+			top: -100px;
+			bottom: 100px;
+			min-height: 450px;
+		}
+	}
+
+	footer {
+
+		.footer-container {
+			
+			width: 80%;
+		}
+	}
+}
+
+@media (max-width:767px) {
+	section.splash {
+		h1 {
+			font-size: 2.75rem;
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+	}
+
+	section.hi {
+		padding-top: 8%;
+	}
+
+	section.what {
+		.what-container {
+			margin: 15% auto;
+			padding: 0;
+			&:nth-of-type(odd) h4{
+				left: 125%;
+			}
+		}
+
+		h4 {
+			left: -70%;
+			top: -25%;
+		}
+	}
+}
+
+@media (max-width:700px) {
+	section.hi {
+		.hi-left {
+			top: -100px;
+			bottom: 100px;
+			min-height: 500px;
+		}
+	}
+
+	footer {
+		.copyright {
+			.copyright-left {
+				float: none;
+				text-align: center;
+			}
+
+			.copyright-right {
+				float: none;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width:600px) {
+	header {
+		i.fa {
+			display: block;
+			text-align: center;
+			padding: 0;
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		.nav {
+			margin-left: 0;
+		}
+
+		.nav-open {
+			left: 0;
+			display: flex;
+			justify-content: center;
+			transition: all 0.3s ease;
+		}
+	}
+
+	section.splash {
+		h1 {
+			padding: 0 4%;
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+	}
+
+	section.recent {
+		.recent-container {
+			border: none;
+		}
+
+		figure {
+			width: 80%;
+			margin: 0 auto;
+			display: block;
+			&:nth-of-type(2) {
+				margin: 0 auto;
+			}
+			&::after {
+				display: block;
+				content: '';
+				background: $outline-grey;
+				width: 120%;
+				height: 1px;
+				margin: 20% 0;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	section.what {
+		h2 {
+			margin: 0;
+			text-align: center;
+			&::before {
+				display: none;
+			}
+		}
+
+		.what-container {
+			width: 80%;
+			margin: 20% auto;
+			padding: 2%;
+			position: relative;
+			&:nth-of-type(odd) h4{
+				left: 100%;
+			}
+		}
+
+		h3 {
+			text-transform: none;
+			font-size: 1.7rem;
+		}
+
+		h4 {
+			font-family: 'Gotham Book';
+			font-size: 6rem;
+			position: static;
+			text-align: center;
+			margin:0;
+			margin-bottom: 13%;
+		}
+
+		hr {
+			width: 40%;
+			margin: 0 auto;
+			position: relative;
+			top: -10%;
+			bottom: 75px;
+		}
+
+		hr:first-of-type {
+			position: static;
+			width: 80%;
+			transform: rotate(-25deg);
+		}
+
+		hr:nth-of-type(2) {
+			position: static;
+			width: 100%;
+			transform: rotate(25deg);
+		}
+
+		hr:last-of-type {
+			display: none;
+		}
+	}
+
+	section.hi {
+		.container {
+			width: 80%;
+		}
+
+		.hi-left, .hi-right {
+			display: block;
+			width: 100%;
+		}
+		.hi-left {
+			background: transparent;
+			min-height: 450px;
+			margin: 8% 0;
+			position: relative;
+			left: 0;
+			h3 {
+				text-transform: none;
+			}
+		}
+
+		.hi-right {
+			position: relative;
+			left: 0;
+			top: -125px;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.hi-outline {
+			padding: 10%;
+			background: transparent;
+			border: 1px solid $outline-grey;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 10%;
+			bottom: -10%;
+
+		}
+	}
+
+	footer {
+
+		.footer-container {
+			padding: 3% 0 20%;
+			margin: 0 auto;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+

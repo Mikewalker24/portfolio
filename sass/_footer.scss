@@ -1,3 +1,65 @@
 footer {
+	padding-top: 4%;
 	clear: both;
+	background-color: $teal;
+	color: #fff;
+	
+	h3 {
+		text-align: center;
+
+	}
+
+	.footer-container {
+		padding: 3% 0 20%;
+		margin: 0 auto;
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	a.social {
+		flex-basis: 25%;
+		color: #fff;
+		font-family: 'Gotham Book';
+		text-transform: uppercase;
+		transition: all 0.2s ease;
+		font-size: 0.8rem;
+		letter-spacing: 0.2rem;
+		padding: 5%;
+		&:hover {
+			opacity: 0.3;
+		}
+	}
+
+
+	.copyright {
+		background-color: #273D35;
+		.copyright-left {
+			float: left;
+		}
+
+		.copyright-right {
+			float: right;
+		}
+
+		p, a {
+			display: inline-block;
+			font-family: 'Cormorant Garamond';
+			font-size: 0.8rem;
+			color: #fff;
+			font-style: italic;
+			padding: 2% 0;
+			letter-spacing: 0.08rem;
+		}
+
+		a {
+			margin-left: 5px;
+			padding: 0;
+			transition: all 0.2s ease;
+		}
+
+		a:hover {
+			opacity: 0.3;
+		}
+	}
 }

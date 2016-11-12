@@ -1,8 +1,40 @@
+header {
+	background-color: $teal;
+	color: white;
+	i {
+		padding: 2% 1% 0 5%;
+		cursor: pointer;
+		position: relative;
+		top: 5px;
+		z-index: 10;
+		background: $teal;
+		user-select: none;
+		transition: opacity 0.2s ease;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	.nav {
+		position: relative;
+		left: -100%;
+		z-index: 5;
+		transition: all 0.3s ease;
+	}
+
+	.nav-open {
+		left: 0;
+		transition: all 0.3s ease;
+	}
+
+}
+
+
 section.splash {
 	background-color: $teal;
 	color: white;
 	.splash-container {
-		padding: 20% 0;
+		padding: 2% 0 8%;
 		margin: 0 auto;
 	}
 
@@ -11,9 +43,53 @@ section.splash {
 		text-align: center;
 	}
 
-	hr {
-		width: 50%;
+	h1 {
+		text-transform: uppercase;
+		font-family: 'Raleway';
+		letter-spacing: 8px;
+		font-size: 3.25rem;
 	}
+
+	hr {
+		width: 33%;
+	}
+
+	a {
+		color: white;
+	}
+
+	i {
+		display: block;
+		text-align: center;
+		padding: 2%;
+	}
+
+	@keyframes bounce {
+		0%, 20%, 60%, 100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+
+		40% {
+			-webkit-transform: translateY(-20px);
+			transform: translateY(-20px);
+		}
+
+		80% {
+			-webkit-transform: translateY(-10px);
+			transform: translateY(-10px);
+		}
+	}
+
+	i:hover {
+		animation: bounce 1s;
+	}
+
+	// #chevron:active i {
+	// 	animation: bounce 1s;
+	// }
+
+	
 }
 
 section.recent {
@@ -22,24 +98,50 @@ section.recent {
 	}
 
 	.recent-container {
-		border: 1px solid grey;
-		font-size: 0;
-		padding: 5%;
+		border: 1px solid $outline-grey;
+		padding: 4%;
 	}
 
-	.box {
+	.image-container {
+		width: 100%;
+		font-size: 0;
+	}
+	
+	figure {
 		display: inline-block;
-		height: 200px;
-		width: 200px;
-		background-color: grey;
-		margin-right: 5%;
-		&:last-of-type {
-			margin-right: 0;
+		width: 30%;
+		position: relative;
+		&:nth-of-type(2) {
+			margin: 0 4%;
 		}
 	}
+
+	figcaption {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		bottom: 5%;
+		left: 5%;
+		opacity: 0;
+		transition: all 0.2s ease;
+		background-color: rgba(255,255,255,0.8);
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+
 }
 
 section.hi {
+	.container {
+		width: 80%;
+	}
+
 	.hi-left, .hi-right {
 		display: inline-block;
 		vertical-align: top;
@@ -47,13 +149,105 @@ section.hi {
 		width: 50%;
 	}
 	.hi-left {
+		background: #fff;
+		min-height: 450px;
+		margin: 8% 0;
+		// padding: 8%;
+		position: relative;
+		left: 2%;
+		z-index: 10;
 		h3 {
-			font-size: 2rem;
-		}
-		p {
-			font-size: 1rem;
+			margin: 1% 0;
+			font-size: 1.6rem;
+			text-transform: none;
 		}
 	}
 
+	.hi-right {
+		position: relative;
+		left: -2%;
+	}
 
+	.hi-outline {
+		padding: 5% 15% 20% 5%;
+		background: transparent;
+		border: 1px solid $outline-grey;
+		position: absolute;
+		left: 10%;
+		right: -10%;
+		top: 10%;
+		bottom: -10%;
+
+	}
+}
+
+section.what {
+	
+	// hr {
+	// 	float: left;
+	// 	width: 50%;
+	// }
+
+	h2 {
+		text-align: right;
+		margin: 0 15% 0 0;
+		&::before {
+			display: block;
+			content: '';
+			background: $outline-grey;
+			height: 1px;
+			width: 45%;
+			margin: 0 auto;
+			position: relative;
+			top: 19px;
+		}
+
+	}
+
+	.what-container {
+		width: 40%;
+		margin: 8% auto;
+		padding: 5%;
+		position: relative;
+		&:nth-of-type(odd) h4{
+			left: 100%;
+		}
+	}
+
+	h3 {
+		text-transform: none;
+		font-size: 1.7rem;
+	}
+
+	h4 {
+		font-family: 'Gotham Book';
+		font-size: 6rem;
+		position: absolute;
+		top: 7%;
+		left: -30%;
+		color: $teal;
+	}
+
+	hr {
+		width: 40%;
+		margin: 0 auto;
+		position: relative;
+		top: -10%;
+		bottom: 75px;
+	}
+
+	hr:first-of-type {
+		transform: rotate(-35deg);
+		left: 20%;
+	}
+
+	hr:nth-of-type(2) {
+		transform: rotate(35deg);
+		right: 20%;
+
+	}
+
+	hr:last-of-type {
+		display: none;
+	}
 }

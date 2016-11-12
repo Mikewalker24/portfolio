@@ -13,13 +13,44 @@
 
 <body <?php body_class(); ?>>
 
-<header>
-  <div class="container">
-<!--  
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?> -->
-  </div> <!-- /.container -->
-</header><!--/.header-->
+
+
+  <?php if ( is_front_page() ) { ?>
+  <header>
+    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+
+    <div class="nav">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?> 
+    </div>
+  </header>
+  <?php
+  
+    }
+  
+  else { ?>
+     <header class="portfolio-header">
+      <div class="portfolio-nav">
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_location' => 'portfolio-nav'
+        )); ?> 
+      </div>
+      <h1 class="portfolio-header-title">Michael Walker</h1>
+      <div class="portfolio-social">
+        <a href="http://twitter.com/mikewalkercodes"><i class="fa fa-twitter" target="_blank"></i></a>
+        <a href="mailto:hello@mikewalker.co"><i class="fa fa-envelope-o" target="_blank"></i></a>
+        <a href="https://ca.linkedin.com/in/mike-walker-8a5a8348" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="http://github.com/mikewalker24"><i class="fa fa-github" target="_blank"></i></a>
+      </div>
+    </header>
+      <?php
+    }
+ ?>
+
+
+
+
 
